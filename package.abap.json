@@ -1,16 +1,17 @@
 {
-  "name": "{{module}}",
+  "name": "ajson-extensions",
   "version": "1.0.0",
-  "description": "{{package}}",
+  "description": "Extensions for AJSON (Filter, Mappings, etc.)",
   "type": "module",
   "keywords": [
     "abap",
-    "apm",
+    "ajson",
+    "extension",
     "module"
   ],
   "homepage": "https://abappm.com",
   "bugs": {
-    "url": "https://github.com/abapPM/{{repo}}"
+    "url": "https://github.com/abapPM/ABAP-AJSON-Extensions/issues"
   },
   "license": "MIT",
   "author": {
@@ -24,17 +25,14 @@
     }
   ],
   "repository": {
-    "url": "https://github.com/abapPM/{{repo}}"
+    "url": "https://github.com/abapPM/ABAP-AJSON-Extensions"
   },
   "funding": {
     "type": "github",
     "url": "https://github.com/sponsors/abapPM"
   },
-  "dependencies": {
-    "error": "^1.0.0"
-  },
   "engines": {
-    "abap": ">=7.50",
+    "abap": ">=7.2",
     "apm": ">=1"
   }
 }
