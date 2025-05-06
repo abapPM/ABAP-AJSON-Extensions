@@ -65,8 +65,7 @@ CLASS ltcl_ajson_libs IMPLEMENTATION.
     DATA abap_result TYPE ty_test.
     DATA ajson TYPE REF TO zif_ajson.
 
-    ajson = zcl_ajson=>parse( json_test
-      )->map( zcl_ajson_extensions=>from_camel_case_underscore( ) ).
+    ajson = zcl_ajson=>parse( json_test )->map( zcl_ajson_extensions=>from_camel_case_underscore( ) ).
 
     ajson->to_abap( IMPORTING ev_container = abap_result ).
 
