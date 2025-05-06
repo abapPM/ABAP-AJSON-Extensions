@@ -180,7 +180,7 @@
       "aqqu": "^Z",
       "aqsg": "^Z",
       "auth": "^Z",
-      "clas": "^ZC(L|X)\\_",
+      "clas": "^ZC(L|X)\\_AJSON_EXT",
       "cmod": "^Z",
       "doma": "^Z",
       "dtel": "^Z",
@@ -192,7 +192,7 @@
       "idoc": "^Z",
       "ignoreNames": [],
       "ignorePatterns": [],
-      "intf": "^ZIF\\_",
+      "intf": "^ZIF\\_AJSON_EXT",
       "msag": "^Z",
       "patternKind": "required",
       "pinf": "^Z",
@@ -282,6 +282,6 @@
     "errorNamespace": "^(Z|Y|LCL_|TY_|LIF_)",
     "globalConstants": [],
     "globalMacros": [],
-    "version": "v750"
+    "version": "v702"
   }
 }
