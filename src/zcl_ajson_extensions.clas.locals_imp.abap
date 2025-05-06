@@ -17,8 +17,6 @@ CLASS lcl_to_camel_case_underscore IMPLEMENTATION.
 
     FIELD-SYMBOLS <token> LIKE LINE OF tokens.
 
-    TRANSLATE cv_name TO LOWER CASE.
-
     from = 2.
     IF cv_name(1) = '_'.
       from = 3.
@@ -58,8 +56,7 @@ ENDCLASS.
 CLASS lcl_from_camel_case_underscore IMPLEMENTATION.
 
   METHOD zif_ajson_mapping~rename_node.
-    REPLACE ALL OCCURRENCES OF REGEX `([a-z])([A-Z])` IN cv_name WITH `$1_$2`. "#EC NOTEXT
-    TRANSLATE cv_name TO UPPER CASE.
+    REPLACE ALL OCCURRENCES OF REGEX `([a-z])([A-Z])` IN cv_name WITH `$1_$2`.
   ENDMETHOD.
 
   METHOD zif_ajson_mapping~to_abap. " deprecated
@@ -71,6 +68,7 @@ CLASS lcl_from_camel_case_underscore IMPLEMENTATION.
   ENDMETHOD.
 
 ENDCLASS.
+
 "
 " FILTERS
 "

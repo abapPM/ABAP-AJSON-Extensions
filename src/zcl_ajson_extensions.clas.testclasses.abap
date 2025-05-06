@@ -63,16 +63,19 @@ CLASS ltcl_ajson_libs IMPLEMENTATION.
   METHOD from_camel_case_underscore.
 
     DATA abap_result TYPE ty_test.
+    DATA ajson TYPE REF TO zif_ajson.
 
-    zcl_ajson=>parse( json_test
-      )->map( zcl_ajson_extensions=>from_camel_case_underscore( )
-      )->to_abap( IMPORTING ev_container = abap_result ).
+    ajson = zcl_ajson=>parse( json_test
+      )->map( zcl_ajson_extensions=>from_camel_case_underscore( ) ).
+
+    ajson->to_abap( IMPORTING ev_container = abap_result ).
 
     cl_abap_unit_assert=>assert_equals(
       act = abap_result
       exp = abap_test ).
 
   ENDMETHOD.
+
   "
   " FILTERS
   "
