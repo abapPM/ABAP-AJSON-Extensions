@@ -51,7 +51,7 @@ CLASS ltcl_ajson_libs IMPLEMENTATION.
       )->set(
         iv_path = '/'
         iv_val  = abap_test
-      )->map( zcl_ajson_extensions=>to_camel_case_underscore( )
+      )->map( /apmg/cl_ajson_extensions=>to_camel_case_underscore( )
       )->stringify( ).
 
     cl_abap_unit_assert=>assert_equals(
@@ -65,7 +65,7 @@ CLASS ltcl_ajson_libs IMPLEMENTATION.
     DATA abap_result TYPE ty_test.
     DATA ajson TYPE REF TO zif_ajson.
 
-    ajson = zcl_ajson=>parse( json_test )->map( zcl_ajson_extensions=>from_camel_case_underscore( ) ).
+    ajson = zcl_ajson=>parse( json_test )->map( /apmg/cl_ajson_extensions=>from_camel_case_underscore( ) ).
 
     ajson->to_abap( IMPORTING ev_container = abap_result ).
 
@@ -98,7 +98,7 @@ CLASS ltcl_ajson_libs IMPLEMENTATION.
 
     act = zcl_ajson=>create_from(
       ii_source_json = test
-      ii_filter = zcl_ajson_extensions=>filter_empty_zero_null( ) ).
+      ii_filter = /apmg/cl_ajson_extensions=>filter_empty_zero_null( ) ).
 
     cl_abap_unit_assert=>assert_equals(
       act = act->stringify( )
@@ -126,7 +126,7 @@ CLASS ltcl_ajson_libs IMPLEMENTATION.
 
     act = zcl_ajson=>create_from(
       ii_source_json = test
-      ii_filter = zcl_ajson_extensions=>filter_empty_zero_null( ) ).
+      ii_filter = /apmg/cl_ajson_extensions=>filter_empty_zero_null( ) ).
 
     cl_abap_unit_assert=>assert_equals(
       act = act->stringify( )
