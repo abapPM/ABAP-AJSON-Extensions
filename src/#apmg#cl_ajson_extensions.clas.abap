@@ -1,4 +1,4 @@
-CLASS zcl_ajson_extensions DEFINITION
+CLASS /apmg/cl_ajson_extensions DEFINITION
   PUBLIC
   FINAL
   CREATE PUBLIC.
@@ -45,7 +45,7 @@ ENDCLASS.
 
 
 
-CLASS zcl_ajson_extensions IMPLEMENTATION.
+CLASS /apmg/cl_ajson_extensions IMPLEMENTATION.
 
 
   METHOD filter_empty_zero_null.
