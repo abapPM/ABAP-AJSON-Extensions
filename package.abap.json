@@ -31,6 +31,9 @@
     "type": "github",
     "url": "https://github.com/sponsors/abapPM"
   },
+  "dependencies": {
+    "ajons": "^1.12.0"
+  },
   "engines": {
     "abap": ">=7.2",
     "apm": ">=1"
