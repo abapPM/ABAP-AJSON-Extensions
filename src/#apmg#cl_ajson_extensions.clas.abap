@@ -11,7 +11,7 @@ CLASS /apmg/cl_ajson_extensions DEFINITION
 ************************************************************************
   PUBLIC SECTION.
 
-    CONSTANTS c_version TYPE string VALUE '2.0.0' ##NEEDED.
+    CONSTANTS c_version TYPE string VALUE '1.5.0' ##NEEDED.
 
     "! Like zcl_ajson_mapping=>create_to_camel_case( ) but keep any leading underscore
     "! and first characters after it in lower case
