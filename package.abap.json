@@ -1,7 +1,7 @@
 {
   "name": "ajson-extensions",
   "version": "1.0.0",
-  "description": "Extensions for AJSON (Filter, Mappings, etc.) TEST",
+  "description": "Extensions for AJSON (Filter, Mappings, etc.)",
   "type": "module",
   "keywords": [
     "abap",
