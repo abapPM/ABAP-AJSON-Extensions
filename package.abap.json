@@ -39,5 +39,10 @@
   "engines": {
     "abap": ">=7.2",
     "apm": ">=1"
+  },
+  "sapPackage": {
+    "default": "/APMG/AJSON-EXT",
+    "applicationComponent": "BC",
+    "abapLanguageVersion": "standard"
   }
 }
